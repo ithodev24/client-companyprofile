@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar/Company/Navbar';
+import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import IphoneSection from './components/IphoneSection';
 import KenapaHarusKami from './components/KenapaHarusKami';

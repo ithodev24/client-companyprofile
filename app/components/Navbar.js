@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center text-sm md:text-base font-semibold text-gray-800">
-          <img src="/images/logo.png" alt="Logo" className="w-6 h-6 mr-2" />
+          <img src="/images/logo.png" alt="Logo" className="w-12 h-12 mr-2" />
           PT DAHLIA GLOBAL INDO
         </div>
 
