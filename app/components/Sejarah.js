@@ -12,7 +12,7 @@ export default function Sejarah() {
       <div className="relative flex flex-col lg:flex-row w-full items-start justify-start px-2 sm:px-4 md:px-6 lg:px-0">
         {/* Teks box putih */}
         <div
-          className="bg-white rounded-xl shadow-lg z-20 relative w-full sm:w-[90%] md:w-[80%] lg:w-[750px] h-auto sm:h-[300px] md:h-[360px] lg:h-[420px] flex flex-col justify-center items-start py-4 sm:py-6 md:py-8 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-16 mt-6 sm:mt-8 md:mt-10 lg:mt-10 ml-0"
+          className="bg-white rounded-r-xl shadow-2xl z-20 relative w-full sm:w-[90%] md:w-[80%] lg:w-[750px] h-auto sm:h-[300px] md:h-[360px] lg:h-[420px] flex flex-col justify-center items-start py-4 sm:py-6 md:py-8 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-16 mt-6 sm:mt-8 md:mt-10 lg:mt-10 ml-0"
           style={{
             boxShadow: '0 6px 20px rgba(0,0,0,0.15)',
           }}
@@ -35,7 +35,7 @@ export default function Sejarah() {
           <img
             src="/images/sejarah.png"
             alt="Sejarah Perusahaan"
-            className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[490px] object-cover rounded-xl shadow-xl"
+            className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[490px] object-cover rounded-l-2xl shadow-xl"
           />
         </div>
       </div>
