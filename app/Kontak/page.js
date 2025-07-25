@@ -10,9 +10,9 @@ export default function KontakKami() {
         {/* Container Utama */}
         <div className="px-4 sm:px-8 md:px-20 bg-white relative pb-4 md:pb-6 lg:pb-8">
           {/* Box Kuning dengan Maps */}
-          <div className="relative bg-yellow-300 rounded-b-2xl p-6 md:p-10 flex flex-col lg:flex-row gap-6 min-h-[500px] shadow-xl">
+          <div className="relative bg-[#FFDD00] rounded-b-2xl p-6 md:p-10 flex flex-col lg:flex-row gap-6 min-h-[500px] shadow-xl">
             {/* Info Kontak */}
-            <div className="flex-1 text-[#474747] z-10 py-6 lg:py-12 bg-white/50 rounded-lg ">
+            <div className="flex-1 text-[#474747] z-10 py-6 lg:py-12 rounded-lg ">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 lg:mb-8 px-4 sm:px-8 lg:px-32 text-center">
                 Kontak Kami
               </h2>
@@ -106,7 +106,7 @@ export default function KontakKami() {
             </a>
 
             <a
-              href="https://www.instagram.com/dahliaquranissiva?igsh=MTBmcjl5dDZpNzBpaA=="
+              href="https://www.instagram.com/ptdahliaglobalindo?igsh=ZWZxYnNrYTYzNHA0"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between w-full max-w-xs px-4 py-3 bg-white rounded-xl text-pink-500 font-semibold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300"

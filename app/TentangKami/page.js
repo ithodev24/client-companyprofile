@@ -55,12 +55,38 @@ const documents = [
     isi: ["/images/isisk.jpg"],
   },
   {
-    img: "/images/dokumen4.png",
+    img: "/images/pernyataanmandiri.png",
     isi: ["/images/isipernyataanmandiri.jpg"],
   },
   {
     img: "/images/dokumendaftar.png",
     isi: ["/images/isisktpajak.jpg"],
+  },
+  {
+    img: "/images/dok-npwp.png",
+    isi: ["/images/isi-npwp.png"],
+  },
+  {
+    img: "/images/dok-sktp.png",
+    isi: ["/images/isi-sktp.png"],
+  },
+  {
+    img: "/images/dok-sppl.png",
+    isi: [
+      "/images/isi-sppl-1.png",
+      "/images/isi-sppl-2.png",
+    ],
+  },
+  {
+    img: "/images/dok-akun.png",
+    isi: ["/images/isi-akun.png"],
+  },
+  {
+    img: "/images/dok-tataruang.png",
+    isi: [
+      "/images/isi-tataruang-1.png",
+      "/images/isi-tataruang-2.png",
+    ],
   },
 ];
 
@@ -276,9 +302,9 @@ export default function TentangKami() {
         </div>
 
         {/* Dokumen */}
-        <div className="relative w-full bg-gradient-to-br from-yellow-400 to-yellow-500 py-12 overflow-hidden">
+        <div className="relative w-full bg-gradient-to-br bg-[#FFDD00] py-12 overflow-hidden">
           {/* Desktop */}
-          <div className="hidden md:flex justify-center items-center space-x-8 px-12">
+          <div className="hidden md:flex items-center space-x-8 px-12 max-w-7xl mx-auto">
             <button
               onClick={handlePrev}
               className="z-10 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg hover:bg-white hover:shadow-xl transition-all duration-300 hover:scale-110"
