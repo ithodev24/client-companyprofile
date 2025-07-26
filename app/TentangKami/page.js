@@ -7,31 +7,32 @@ import Sejarah from "../components/Sejarah";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FaChevronLeft, FaChevronRight, FaPlay } from "react-icons/fa";
 import AnimatePage from "../components/AnimatePage";
+import Image from "next/image";
 
 const teamMembers = [
   {
-    img: "/images/kontenkreator.png",
+    Image: "/images/kontenkreator.png",
     title: "Konten Kreator",
     name: "Diana Putri",
   },
   {
-    img: "/images/admin.png",
+    Image: "/images/admin.png",
     title: "Admin",
     name: "Amelia Rahayu",
   },
   {
-    img: "/images/owner.png",
+    Image: "/images/owner.png",
     title: "Pemilik Perusahaan",
     name: "Dahlia Qurratu Siva SM, M.Kom",
     extra: "Jakarta, 20 Januari 2002 - 08979156133",
   },
   {
-    img: "/images/keuangan.png",
+    Image: "/images/keuangan.png",
     title: "Keuangan",
     name: "Evi Dian Nuke",
   },
   {
-    img: "/images/driver.png",
+    Image: "/images/driver.png",
     title: "Driver",
     name: "Aldi Hidayat",
   },
@@ -39,11 +40,11 @@ const teamMembers = [
 
 const documents = [
   {
-    img: "/images/dokumen1.png",
+    Image: "/images/dokumen1.png",
     isi: ["/images/isidokumen1.png"],
   },
   {
-    img: "/images/dokumen2.png",
+    Image: "/images/dokumen2.png",
     isi: [
       "/images/NIB - PTP DAHLIA GLOBAL INDO-1.png",
       "/images/NIB - PTP DAHLIA GLOBAL INDO-2.png",
@@ -51,38 +52,38 @@ const documents = [
     ],
   },
   {
-    img: "/images/dokumen3.png",
+    Image: "/images/dokumen3.png",
     isi: ["/images/isisk.jpg"],
   },
   {
-    img: "/images/pernyataanmandiri.png",
+    Image: "/images/pernyataanmandiri.png",
     isi: ["/images/isipernyataanmandiri.jpg"],
   },
   {
-    img: "/images/dokumendaftar.png",
+    Image: "/images/dokumendaftar.png",
     isi: ["/images/isisktpajak.jpg"],
   },
   {
-    img: "/images/dok-npwp.png",
+    Image: "/images/dok-npwp.png",
     isi: ["/images/isi-npwp.png"],
   },
   {
-    img: "/images/dok-sktp.png",
+    Image: "/images/dok-sktp.png",
     isi: ["/images/isi-sktp.png"],
   },
   {
-    img: "/images/dok-sppl.png",
+    Image: "/images/dok-sppl.png",
     isi: [
       "/images/isi-sppl-1.png",
       "/images/isi-sppl-2.png",
     ],
   },
   {
-    img: "/images/dok-akun.png",
+    Image: "/images/dok-akun.png",
     isi: ["/images/isi-akun.png"],
   },
   {
-    img: "/images/dok-tataruang.png",
+    Image: "/images/dok-tataruang.png",
     isi: [
       "/images/isi-tataruang-1.png",
       "/images/isi-tataruang-2.png",
@@ -138,19 +139,20 @@ export default function TentangKami() {
         {/* Header */}
         <div className="relative">
           <div className="relative h-[500px] sm:h-[600px] text-center">
-            <img
-              src="/images/tentangkami_icon_bg.png"
-              alt="Background"
-              className="absolute inset-0 w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover z-0"
-            />
-
-            <img
-              src="/images/tentangkami.png"
-              alt="Overlay"
-              className="absolute top-0 w-full object-cover z-10"
-              style={{ marginTop: "-64px" }}
-            />
-            <div className="absolute top-24 sm:top-10 w-full text-center px-4 z-20">
+            <Image
+    src="/images/tentangkami_icon_bg.png"
+    alt="Background"
+    fill
+    className="object-cover z-0"
+  />
+  <Image
+    src="/images/tentangkami.png"
+    alt="Overlay"
+    fill
+    className="object-cover"
+    style={{ marginTop: "-380px" }}
+  />
+            <div className="absolute top-15 sm:top-10 w-full text-center px-4 z-20">
               <h1 className="text-2xl sm:text-4xl font-bold text-yellow-400">
                 PT DAHLIA GLOBAL INDO
               </h1>
@@ -169,10 +171,17 @@ export default function TentangKami() {
                     key={i}
                     className="bg-white rounded-lg w-40 sm:w-44 text-center shadow-md"
                   >
-                    <img
-                      src={member.img}
+                    {/* <Image
+                      src={member.Image}
                       alt={member.title}
                       className="bg-cover mx-auto"
+                    /> */}
+                    <Image
+                      src={member.Image}
+                      alt={member.title}
+                      width={150}
+                      height={150}
+                      className="object-cover mx-auto"
                     />
                     <div className="py-2">
                       <h3 className="text-xs text-gray-800">{member.title}</h3>
@@ -200,11 +209,19 @@ export default function TentangKami() {
                   <ChevronLeft />
                 </button>
                 <div className="bg-white rounded-lg w-64 text-center shadow-md">
-                  <img
-                    src={teamMembers[mobileTeamIndex].img}
+                  {/* <Image
+                    src={teamMembers[mobileTeamIndex].Image}
                     alt={teamMembers[mobileTeamIndex].title}
                     className="bg-cover mx-auto"
-                  />
+                  /> */}
+                  <Image
+  src={teamMembers[mobileTeamIndex].Image}
+  alt={teamMembers[mobileTeamIndex].title}
+  width={200}
+  height={200}
+  className="bg-cover mx-auto"
+/>
+
                   <div className="py-2">
                     <h3 className="text-xs text-gray-800">
                       {teamMembers[mobileTeamIndex].title}
@@ -260,16 +277,31 @@ export default function TentangKami() {
         {/* Misi Section */}
         <div className="w-full px-0 md:px-0 py-10 bg-white flex flex-col md:flex-row items-start justify-between gap-6 mx-auto">
           <div className="relative w-fit h-auto">
-            <img
+            {/* <Image
               src="/images/misi_bawah.png"
               alt="Background Image"
               className="absolute top-0 left-0 w-56 md:w-80 rounded-xl z-0"
             />
-            <img
+            <Image
               src="/images/misi_atas.png"
               alt="Main Image"
               className="relative ml-20 mt-20 w-72 md:w-100 rounded-xl shadow-lg z-10"
-            />
+            /> */}
+            <Image
+  src="/images/misi_bawah.png"
+  alt="Background Image"
+  width={320} // misal: 320px = 20rem
+  height={200} // bisa disesuaikan
+  className="absolute top-0 left-0 w-56 md:w-80 rounded-xl z-0"
+/>
+
+<Image
+  src="/images/misi_atas.png"
+  alt="Main Image"
+  width={400}
+  height={300}
+  className="relative ml-20 mt-20 w-72 md:w-100 rounded-xl shadow-lg z-10"
+/>
           </div>
           <div className="flex-1">
             <div className="flex justify-end mb-6">
@@ -319,12 +351,20 @@ export default function TentangKami() {
                   className="group transition-all duration-500 ease-out transform hover:scale-105"
                 >
                   <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-300">
-                    <img
-                      src={doc.img}
+                    {/* <Image
+                      src={doc.Image}
                       alt={`Dokumen ${i + 1}`}
                       onClick={() => openModal(doc)}
                       className="w-72 h-auto mx-auto cursor-pointer transition-all duration-300 group-hover:brightness-105"
-                    />
+                    /> */}
+                    <Image
+                        src={doc.Image}
+                        alt={`Dokumen ${i + 1}`}
+                        width={288} // 72 * 4 px
+                        height={200}
+                        onClick={() => openModal(doc)}
+                        className="mx-auto cursor-pointer transition-all duration-300 group-hover:brightness-105"
+                      />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 pointer-events-none" />
                   </div>
                 </div>
@@ -354,12 +394,19 @@ export default function TentangKami() {
 
             <div className="w-[75%] relative">
               <div className="overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                <img
-                  src={documents[mobileDocIndex].img}
+                {/* <Image
+                  src={documents[mobileDocIndex].Image}
                   alt={`Dokumen ${mobileDocIndex + 1}`}
                   onClick={() => openModal(documents[mobileDocIndex])}
                   className="w-full max-w-xs h-auto mx-auto cursor-pointer hover:brightness-105 transition-all duration-300"
-                />
+                /> */}
+                <Image
+  src={documents[mobileDocIndex].Image}
+  alt={`Dokumen ${mobileDocIndex + 1}`}
+  width={300}
+  height={200}
+  onClick={() => openModal(documents[mobileDocIndex])}
+/>
               </div>
             </div>
 
@@ -429,16 +476,24 @@ export default function TentangKami() {
                       : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
                   }`}
                 >
-                  {selectedDoc.isi.map((img, idx) => (
+                  {selectedDoc.isi.map((Image, idx) => (
                     <div
                       key={idx}
                       className="group overflow-hidden rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-lg"
                     >
-                      <img
-                        src={img}
+                      {/* <Image
+                        src={Image}
                         alt={`Isi Dokumen ${idx + 1}`}
                         className="w-full h-auto max-h-[350px] object-contain bg-gray-50 transition-transform duration-300 group-hover:scale-105"
-                      />
+                      /> */}
+                      <Image
+                      src={Image}
+                      alt={`Isi Dokumen ${idx + 1}`}
+                      width={400}
+                      height={300}
+                      className="w-full h-auto max-h-[350px] object-contain bg-gray-50 transition-transform duration-300 group-hover:scale-105"
+                    />
+
                     </div>
                   ))}
                 </div>

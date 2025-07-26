@@ -86,9 +86,16 @@ export default function Home() {
                   key={idx}
                   className="bg-white shadow-xl rounded-lg flex flex-col transition-transform duration-300 hover:scale-105"
                 >
-                  <img
+                  {/* <Image
                     src={card.image}
                     alt={card.title}
+                    className="w-full h-40 object-cover rounded-t-lg"
+                  /> */}
+                  <Image
+                    src={card.image}
+                    alt={card.title}
+                    width={400}
+                    height={160}
                     className="w-full h-40 object-cover rounded-t-lg"
                   />
                   <div className="p-4 flex flex-col justify-between flex-grow">

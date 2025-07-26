@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AnimatePage from "../components/AnimatePage";
+import Image from "next/image";
 
 export default function KontakKami() {
   return (
@@ -98,11 +99,18 @@ export default function KontakKami() {
               className="flex items-center justify-between w-full max-w-xs px-4 py-3 bg-white rounded-xl text-green-800 font-semibold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300"
             >
               WhatsApp
-              <img
+              {/* <Image
                 src="/images/logos_whatsapp-icon.png"
                 alt="WA"
                 className="w-6 lg:w-8 h-6 lg:h-8"
-              />
+              /> */}
+              <Image
+              src="/images/logos_whatsapp-icon.png"
+              alt="WA"
+              width={32}
+              height={32}
+              className="w-6 lg:w-8 h-6 lg:h-8"
+            />
             </a>
 
             <a
@@ -112,9 +120,16 @@ export default function KontakKami() {
               className="flex items-center justify-between w-full max-w-xs px-4 py-3 bg-white rounded-xl text-pink-500 font-semibold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300"
             >
               Instagram
-              <img
+              {/* <Image
                 src="/images/logos_instagram-icon.png"
                 alt="IG"
+                className="w-6 lg:w-8 h-6 lg:h-8"
+              /> */}
+              <Image
+                src="/images/logos_instagram-icon.png"
+                alt="IG"
+                width={32}
+                height={32}
                 className="w-6 lg:w-8 h-6 lg:h-8"
               />
             </a>

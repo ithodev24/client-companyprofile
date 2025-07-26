@@ -1,21 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="relative bg-white text-gray-800 overflow-hidden">
       {/* Ornamen Kiri Atas */}
-<img
-  src="/images/logo_footer_kiri.png"
-  alt="Ornamen Kiri"
-  className="absolute top-0 left-0 w-64 sm:w-96 md:w-[20rem] lg:w-[28rem] xl:w-[36rem] z-10"
-/>
-{/* Ornamen Kanan Bawah */}
-<img
-  src="/images/logo_footer_kanan.png"
-  alt="Ornamen Kanan"
-  className="absolute bottom-10 right-0 w-48 sm:w-64 md:w-[20rem] lg:w-[24rem] xl:w-[28rem] z-10"
-/>
+      <Image
+        src="/images/logo_footer_kiri.png"
+        alt="Ornamen Kiri"
+        width={400}
+        height={200}
+        className="absolute top-0 left-0 w-64 sm:w-96 md:w-[20rem] lg:w-[28rem] xl:w-[36rem] z-10"
+      />
 
+      {/* Ornamen Kanan Bawah */}
+      <Image
+        src="/images/logo_footer_kanan.png"
+        alt="Ornamen Kanan"
+        width={300}
+        height={150}
+        className="absolute bottom-10 right-0 w-48 sm:w-64 md:w-[20rem] lg:w-[24rem] xl:w-[28rem] z-10"
+      />
 
       {/* Konten Utama */}
       <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-8 py-10">
@@ -23,34 +28,62 @@ export default function Footer() {
           {/* Kolom 1: Sosial Media + Bank */}
           <div className="flex flex-col items-center lg:items-start gap-4">
             <div className="flex space-x-4">
-              <a href="#" aria-label="Facebook">
-                <img
-                  src="/images/icon_fb.png"
-                  alt="Facebook"
-                  className="w-6 h-6"
-                />
-              </a>
-              <a href="#" aria-label="Instagram">
-                <img
+              {/* Instagram */}
+              <Link
+                href="https://www.instagram.com/ptdahliaglobalindo?igsh=ZWZxYnNrYTYzNHA0"
+                aria-label="Instagram"
+              >
+                <Image
                   src="/images/icon_ig.png"
                   alt="Instagram"
+                  width={24}
+                  height={24}
                   className="w-6 h-6"
                 />
-              </a>
-              <a href="#" aria-label="WhatsApp">
-                <img
+              </Link>
+
+              {/* WhatsApp */}
+              <Link href="https://wa.me/6281280007220" aria-label="WhatsApp">
+                <Image
                   src="/images/icon_wa.png"
                   alt="WhatsApp"
+                  width={24}
+                  height={24}
                   className="w-6 h-6"
                 />
-              </a>
+              </Link>
             </div>
+
             {/* Logo Bank */}
             <div className="-ml-10 md:-ml-40 self-start bg-yellow-300 rounded-full px-6 py-2 shadow-md flex items-center space-x-6">
-              <img src="/images/pm_bni.png" alt="BNI" className="h-8" />
-              <img src="/images/pm_bca.png" alt="BCA" className="h-8" />
-              <img src="/images/pm_mandiri.png" alt="Mandiri" className="h-8" />
-              <img src="/images/pm_qris.png" alt="QRIS" className="h-8" />
+              <Image
+                src="/images/pm_bni.png"
+                alt="BNI"
+                width={64}
+                height={32}
+                className="h-8 w-auto"
+              />
+              <Image
+                src="/images/pm_bca.png"
+                alt="BCA"
+                width={64}
+                height={32}
+                className="h-8 w-auto"
+              />
+              <Image
+                src="/images/pm_mandiri.png"
+                alt="Mandiri"
+                width={64}
+                height={32}
+                className="h-8 w-auto"
+              />
+              <Image
+                src="/images/pm_qris.png"
+                alt="QRIS"
+                width={64}
+                height={32}
+                className="h-8 w-auto"
+              />
             </div>
           </div>
 
@@ -58,15 +91,9 @@ export default function Footer() {
           <div>
             <h4 className="text-base font-semibold mb-3">Halaman</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>
-                <Link href="/">Beranda</Link>
-              </li>
-              <li>
-                <Link href="/tentangkami">Tentang Kami</Link>
-              </li>
-              <li>
-                <Link href="/kontak">Kontak</Link>
-              </li>
+              <li><Link href="/">Beranda</Link></li>
+              <li><Link href="/tentangkami">Tentang Kami</Link></li>
+              <li><Link href="/kontak">Kontak</Link></li>
             </ul>
           </div>
 
@@ -74,24 +101,12 @@ export default function Footer() {
           <div>
             <h4 className="text-base font-semibold mb-3">Isi Pendukung</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>
-                <a href="/#layanankami">Layanan Kami</a>
-              </li>
-              <li>
-                <a href="/artikel">Artikel</a>
-              </li>
-              <li>
-                <a href="/#kenapakami">Keunggulan</a>
-              </li>
-              <li>
-                <a href="#">Dokumen</a>
-              </li>
-              <li>
-                <a href="/tentangkami#sejarah">Sejarah Perusahaan</a>
-              </li>
-              <li>
-                <a href="/tentangkami#visi">Visi & Misi</a>
-              </li>
+              <li><Link href="/#layanankami">Layanan Kami</Link></li>
+              <li><Link href="/artikel">Artikel</Link></li>
+              <li><Link href="/#kenapakami">Keunggulan</Link></li>
+              <li><Link href="#">Dokumen</Link></li>
+              <li><Link href="/tentangkami#sejarah">Sejarah Perusahaan</Link></li>
+              <li><Link href="/tentangkami#visi">Visi & Misi</Link></li>
             </ul>
           </div>
 

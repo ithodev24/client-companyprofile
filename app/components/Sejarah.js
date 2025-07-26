@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Sejarah() {
   return (
@@ -32,11 +33,19 @@ export default function Sejarah() {
 
         {/* Gambar di bawah, posisi absolute */}
         <div className="absolute top-[-20px] sm:top-[-30px] md:top-[-40px] lg:top-[-52px] right-0 w-[60%] sm:w-[55%] md:w-[55%] lg:w-[55%] z-10 hidden sm:hidden md:hidden lg:block">
-          <img
+          {/* <Image
             src="/images/sejarah.png"
             alt="Sejarah Perusahaan"
             className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[490px] object-cover rounded-l-2xl shadow-xl"
-          />
+          /> */}
+          <Image
+  src="/images/sejarah.png"
+  alt="Sejarah Perusahaan"
+  width={1200}
+  height={800}
+  className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[490px] object-cover rounded-l-2xl shadow-xl"
+/>
+
         </div>
       </div>
     </div>
