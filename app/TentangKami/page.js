@@ -251,9 +251,12 @@ export default function TentangKami() {
           </div>
         </div>
 
+        <section id="sejarah">
         <Sejarah />
+        </section>
 
         {/* Visi */}
+        <section id="visimisi">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-7">
           <div className="bg-transparent p-0 rounded-lg text-black transform translate-y-[-50px]">
             <div className="text-center bg-white p-4 rounded-lg shadow-md">
@@ -332,8 +335,10 @@ export default function TentangKami() {
             </div>
           </div>
         </div>
+        </section>
 
         {/* Dokumen */}
+        <section id="dokumen">
         <div className="relative w-full bg-gradient-to-br bg-[#FFDD00] py-12 overflow-hidden">
           {/* Desktop */}
           <div className="hidden md:flex items-center space-x-8 px-12 max-w-7xl mx-auto">
@@ -465,6 +470,7 @@ export default function TentangKami() {
                 </svg>
               </button>
             </div>
+            
 
             {/* Content */}
             <div className="p-4 sm:p-6 overflow-y-auto max-h-[calc(85vh-80px)]">
@@ -501,6 +507,7 @@ export default function TentangKami() {
             </div>
           </div>
         </div>
+        </section>
 
         <Footer />
       </AnimatePage>

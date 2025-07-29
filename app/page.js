@@ -34,7 +34,7 @@ export default function Home() {
           <div className="absolute inset-0 z-10" />
           <div className="relative z-20 flex flex-col items-start justify-center h-full px-6 md:px-16 lg:px-32 text-white">
             <h1
-              className="text-2xl md:text-4xl lg:text-5xl font-extralight leading-snug mb-4"
+              className="text-2xl md:text-4xl lg:text-[2.75rem] font-extralight leading-snug mb-4"
               style={{ color: "#002F66" }}
             >
               Yukk!

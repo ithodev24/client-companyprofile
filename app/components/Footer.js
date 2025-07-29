@@ -43,7 +43,7 @@ export default function Footer() {
               </Link>
 
               {/* WhatsApp */}
-              <Link href="https://wa.me/6281280007220" aria-label="WhatsApp">
+              <Link href="https://wa.me/6285829764860" aria-label="WhatsApp">
                 <Image
                   src="/images/icon_wa.png"
                   alt="WhatsApp"
@@ -92,8 +92,8 @@ export default function Footer() {
             <h4 className="text-base font-semibold mb-3">Halaman</h4>
             <ul className="space-y-2 text-gray-600">
               <li><Link href="/">Beranda</Link></li>
-              <li><Link href="/tentangkami">Tentang Kami</Link></li>
-              <li><Link href="/kontak">Kontak</Link></li>
+              <li><Link href="/TentangKami">Tentang Kami</Link></li>
+              <li><Link href="/Kontak">Kontak</Link></li>
             </ul>
           </div>
 
@@ -102,11 +102,10 @@ export default function Footer() {
             <h4 className="text-base font-semibold mb-3">Isi Pendukung</h4>
             <ul className="space-y-2 text-gray-600">
               <li><Link href="/#layanankami">Layanan Kami</Link></li>
-              <li><Link href="/artikel">Artikel</Link></li>
               <li><Link href="/#kenapakami">Keunggulan</Link></li>
-              <li><Link href="#">Dokumen</Link></li>
-              <li><Link href="/tentangkami#sejarah">Sejarah Perusahaan</Link></li>
-              <li><Link href="/tentangkami#visi">Visi & Misi</Link></li>
+              <li><Link href="/TentangKami#dokumen">Dokumen</Link></li>
+              <li><Link href="/TentangKami#sejarah">Sejarah Perusahaan</Link></li>
+              <li><Link href="/TentangKami#visimisi">Visi & Misi</Link></li>
             </ul>
           </div>
 

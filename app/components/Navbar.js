@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -69,9 +70,14 @@ export default function Navbar() {
             href="https://wa.me/6285829764860"
             target="_blank"
             rel="noopener noreferrer"
-            className="block md:inline-block mt-2 md:mt-0 bg-gray-200 hover:bg-gray-300 text-sm md:text-base px-4 py-2 rounded-full text-black transition-all duration-300"
+            className={`${
+              menuOpen
+                ? "mt-4 w-full flex items-center justify-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md transition-all duration-300"
+                : "md:inline-block hidden bg-gray-200 hover:bg-gray-300 text-sm md:text-base px-4 py-2 rounded-full text-black transition-all duration-300"
+            }`}
             onClick={() => setMenuOpen(false)}
           >
+            <FaWhatsapp size={18} className="md:hidden" />
             Hubungi Kami
           </a>
         </div>
