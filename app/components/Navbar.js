@@ -31,7 +31,7 @@ export default function Navbar() {
             height={48}
             className="mr-2 hover:scale-105 transition-transform duration-300"
           />
-          PT DAHLIA GLOBAL INDO
+           <span className="drop-shadow-sm">PT DAHLIA GLOBAL INDO</span>
         </div>
 
         {/* Hamburger */}
