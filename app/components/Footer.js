@@ -28,6 +28,20 @@ export default function Footer() {
           {/* Kolom 1: Sosial Media + Bank */}
           <div className="flex flex-col items-center lg:items-start gap-4">
             <div className="flex space-x-4">
+              {/* tiktok */}
+            {/* <Link
+              href="https://www.tiktok.com/@perfectrooms.id?_t=ZS-8yJQHyTqH7i&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/images/icon_tt.png"
+                alt="Instagram"
+                className="w-8 h-8"
+                width={50}
+                height={50}
+              />
+            </Link> */}
               {/* Instagram */}
               <Link
                 href="https://www.instagram.com/ptdahliaglobalindo?igsh=ZWZxYnNrYTYzNHA0"
@@ -38,7 +52,7 @@ export default function Footer() {
                   alt="Instagram"
                   width={24}
                   height={24}
-                  className="w-6 h-6"
+                  className="w-7 h-7"
                 />
               </Link>
 
@@ -49,42 +63,20 @@ export default function Footer() {
                   alt="WhatsApp"
                   width={24}
                   height={24}
-                  className="w-6 h-6"
+                  className="w-8 h-8"
                 />
               </Link>
             </div>
 
             {/* Logo Bank */}
-            <div className="-ml-10 md:-ml-40 self-start bg-yellow-300 rounded-full px-6 py-2 shadow-md flex items-center space-x-6">
-              <Image
-                src="/images/pm_bni.png"
-                alt="BNI"
-                width={64}
-                height={32}
-                className="h-8 w-auto"
-              />
-              <Image
-                src="/images/pm_bca.png"
-                alt="BCA"
-                width={64}
-                height={32}
-                className="h-8 w-auto"
-              />
-              <Image
-                src="/images/pm_mandiri.png"
-                alt="Mandiri"
-                width={64}
-                height={32}
-                className="h-8 w-auto"
-              />
-              <Image
-                src="/images/pm_qris.png"
-                alt="QRIS"
-                width={64}
-                height={32}
-                className="h-8 w-auto"
-              />
-            </div>
+          <div className="absolute bottom-24 -left-10 bg-[#FFDD00] py-2 pr-4 pl-2 rounded-full flex gap-4 shadow-md z-10">
+            <Image src="/images/pm_bni.png" alt="BNI" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_bca.png" alt="BCA" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_mandiri.png" alt="Mandiri" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_qris.png" alt="QRIS" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_mastercard.png" alt="Mastercard" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_visa.png" alt="Visa" width={24} height={24} className="w-8 h-8 object-contain" />
+          </div>
           </div>
 
           {/* Kolom 2: Halaman */}

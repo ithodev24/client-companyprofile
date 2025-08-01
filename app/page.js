@@ -41,7 +41,7 @@ export default function Home() {
               <br />
               Bangun Gaya Hidup Lebih Praktis <br />
               dengan Layanan Rental dari <br />
-              <span style={{ color: "#F7C00B" }}>
+              <span style={{ color: "#002F66" }}>
                 PT Dahlia Global Indo
               </span>
             </h1>
