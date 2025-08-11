@@ -23,13 +23,13 @@ const teamMembers = [
   {
     Image: "/images/owner.png",
     title: "Pemilik Perusahaan",
-    name: "Dahlia Qurratu Siva SM, M.Kom",
+    name: "Dahliana Quranis Siva SM, M.Kom",
     extra: "Jakarta, 20 Januari 2002 - 08979156133",
   },
   {
     Image: "/images/keuangan.png",
     title: "Keuangan",
-    name: "Evi Dian Nuke",
+    name: "Evi Dian Nuke S",
   },
   {
     Image: "/images/driver.png",
@@ -482,24 +482,18 @@ export default function TentangKami() {
                       : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
                   }`}
                 >
-                  {selectedDoc.isi.map((Image, idx) => (
+                  {selectedDoc.isi.map((imgSrc, idx) => (
                     <div
                       key={idx}
                       className="group overflow-hidden rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-lg"
                     >
-                      {/* <Image
-                        src={Image}
-                        alt={`Isi Dokumen ${idx + 1}`}
-                        className="w-full h-auto max-h-[350px] object-contain bg-gray-50 transition-transform duration-300 group-hover:scale-105"
-                      /> */}
                       <Image
-                      src={Image}
-                      alt={`Isi Dokumen ${idx + 1}`}
-                      width={400}
-                      height={300}
-                      className="w-full h-auto max-h-[350px] object-contain bg-gray-50 transition-transform duration-300 group-hover:scale-105"
-                    />
-
+                        src={imgSrc}
+                        alt={`Isi Dokumen ${idx + 1}`}
+                        width={400}
+                        height={300}
+                        className="w-full h-auto max-h-[350px] object-contain bg-gray-50 transition-transform duration-300 group-hover:scale-105"
+                      />
                     </div>
                   ))}
                 </div>

@@ -23,7 +23,7 @@ export default function Sejarah() {
               Didirikan oleh <strong>Dahliana Qur Anis Siva</strong>, PT Dahlia Global Indo hadir dengan semangat inovasi dan komitmen untuk memberikan layanan terbaik bagi pelanggan.
             </p>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-l text-justify leading-relaxed mt-2 sm:mt-3 md:mt-4 lg:mt-4">
-              Perjalanan bisnis dimulai dari penyewaan apartemen di Grand Kamala Lagoon, Bekasi, melalui unit Perfect Rooms. Seiring waktu dan dukungan pelanggan, perusahaan melebarkan sayap ke layanan rental motor di Bandung dengan brand <strong>Rentlady</strong>, serta sewa kamera untuk menunjang gaya hidup masyarakat urban yang dinamis.
+              Perjalanan bisnis dimulai dari penyewaan apartemen di Grand Kamala Lagoon, Bekasi, melalui unit <strong>Perfect Rooms</strong>. Seiring waktu dan dukungan pelanggan, perusahaan melebarkan sayap ke layanan rental motor di Bandung dengan brand <strong>Rentalday</strong>, serta sewa kamera untuk menunjang gaya hidup masyarakat urban yang dinamis.
             </p>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-l text-justify leading-relaxed mt-2 sm:mt-3 md:mt-4 lg:mt-4">
               PT Dahlia Global Indo terus berkembang sebagai solusi mobilitas dan kebutuhan sewa modern di berbagai sektor.
