@@ -6,7 +6,7 @@ const layananKami = [
     highlight: "text-red-600",
     button: (
       <a
-        href="https://rentalday.ptdahliaglobalindo.id/"
+        href="https://rentalday.id/"
         target="_blank"
         rel="noopener noreferrer"
         className="block mt-4 bg-yellow-400 text-black hover:text-yellow-800 py-2 px-4 rounded hover:bg-yellow-200 w-full text-center transition-all duration-300 ease-in-out"
@@ -22,7 +22,7 @@ const layananKami = [
     highlight: "text-yellow-500",
     button: (
       <a
-        href="https://pixelnesia.ptdahliaglobalindo.id/"
+        href="https://pixelnesia.id/"
         target="_blank"
         rel="noopener noreferrer"
         className="block mt-4 bg-yellow-400 text-black hover:text-yellow-800 py-2 px-4 rounded hover:bg-yellow-200 w-full text-center transition-all duration-300 ease-in-out"
@@ -38,7 +38,7 @@ const layananKami = [
     highlight: "text-yellow-800",
     button: (
       <a
-        href="https://perfectrooms.ptdahliaglobalindo.id/"
+        href="https://perfectroom.id/"
         target="_blank"
         rel="noopener noreferrer"
         className="block mt-4 bg-yellow-400 text-black hover:text-yellow-800 py-2 px-4 rounded hover:bg-yellow-200 w-full text-center transition-all duration-300 ease-in-out"
